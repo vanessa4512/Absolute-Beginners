@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     private bool  facingRight;
 
     public float jumpHeight = 7f;
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
     private bool isGround;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     {
         facingRight = true;
         isGround = true;
+        rb = this.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
