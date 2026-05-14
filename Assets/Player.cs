@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         facingRight = true;
+        isGround = true;
     }
 
     // Update is called once per frame
@@ -36,13 +37,21 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGround)
         {
             Jump();
-            isGround = false;
+            isGround = true;
         }
 
         void Jump() {
             Vector2 velocity = rb.linearVelocity;
             velocity.y = jumpHeight;
             rb.linearVelocity = velocity;
+        }
+
+        // private (en caso de que algo falle usar esto al inicio de a linea)
+        void OnCollisionEnter2D(Collision2D collision) {
+            if (collision.gameObject.tag == "Ground")
+            {
+                isGround = true;
+            }
         }
     }
 }
