@@ -2,15 +2,21 @@ using UnityEngine;
 
 public class Follow : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public float     smoothNess = 4f;
+    public Transform player;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        Vector3 targetPosition = new Vector3(
+                                             player.position.x,
+                                             transform.position.y,
+                                             transform.position.z
+                                            );
+
+        transform.position = Vector3.Lerp(
+                                          transform.position,
+                                          targetPosition,
+                                          smoothNess * Time.deltaTime
+                                         );
     }
 }
