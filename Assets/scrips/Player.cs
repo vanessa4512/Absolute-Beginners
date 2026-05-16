@@ -6,9 +6,11 @@ public class Player : MonoBehaviour
     public  float moveSpeed = 5f;
     private bool  facingRight;
 
-    public float jumpHeight = 7f;
+    public  float       jumpHeight = 7f;
+    private bool        isGround;
+
     private Rigidbody2D rb;
-    private bool isGround;
+    private Animator animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,6 +18,7 @@ public class Player : MonoBehaviour
         facingRight = true;
         isGround = true;
         rb = this.GetComponent<Rigidbody2D>();
+        animator = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -41,7 +44,18 @@ public class Player : MonoBehaviour
             isGround = true;
         }
 
+        if (Mathf.Abs(movement) > .1f)
+        {
+            animator.SetFloat("Walk", 1f);
+        }
+        else if (movement < .1f)
+        {
+            animator.SetFloat("Walk", 0f);
+        }
+    }
         void Jump() {
+            animator.SetBool("Jump", true);
+
             Vector2 velocity = rb.linearVelocity;
             velocity.y = jumpHeight;
             rb.linearVelocity = velocity;
@@ -52,7 +66,8 @@ public class Player : MonoBehaviour
             if (collision.gameObject.tag == "Ground")
             {
                 isGround = true;
+                animator.SetBool("Jump", false);
             }
         }
-    }
+
 }
