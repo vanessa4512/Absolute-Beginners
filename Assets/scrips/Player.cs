@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     public  float       jumpHeight = 7f;
     private bool        isGround;
 
+    public int currentCoin;
+
     private Rigidbody2D rb;
     private Animator animator;
 
@@ -17,6 +19,7 @@ public class Player : MonoBehaviour
     {
         facingRight = true;
         isGround = true;
+        currentCoin = 0;
         rb = this.GetComponent<Rigidbody2D>();
         animator = this.GetComponent<Animator>();
     }
@@ -79,7 +82,8 @@ public class Player : MonoBehaviour
         private void OnTriggerEnter2D(Collider2D collision) {
             if (collision.gameObject.tag == "coin")
             {
-                Debug.Log("Collect Coin or Triggered with the Coin");
+                currentCoin++;
+                Destroy(collision.gameObject);;
             }
         }
 
