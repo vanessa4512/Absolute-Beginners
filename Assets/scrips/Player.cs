@@ -83,7 +83,7 @@ public class Player : MonoBehaviour
             if (collision.gameObject.tag == "coin")
             {
                 currentCoin++;
-                Destroy(collision.gameObject);;
+                Destroy(collision.gameObject);
             }
         }
 
