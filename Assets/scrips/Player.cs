@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -6,8 +8,9 @@ public class Player : MonoBehaviour
     public  float moveSpeed = 5f;
     private bool  facingRight;
 
-    public  float       jumpHeight = 7f;
-    private bool        isGround;
+    public  float jumpHeight = 7f;
+    private bool  isGround;
+    public  Text   currentCoinText;
 
     public int currentCoin;
 
