@@ -47,8 +47,17 @@ TagManager:
   - name: fondo
     uniqueID: 4231436257
     locked: 0
+  - name: fondo del fondo
+    uniqueID: 830902119
+    locked: 0
   - name: inicio
     uniqueID: 3167701487
+    locked: 0
+  - name: Enemy
+    uniqueID: 90867385
+    locked: 0
+  - name: Player
+    uniqueID: 69035903
     locked: 0
   m_RenderingLayers:
   - Default

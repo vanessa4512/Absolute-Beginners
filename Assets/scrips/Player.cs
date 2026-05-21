@@ -63,6 +63,7 @@ public class Player : MonoBehaviour
 
         // private (en caso de que algo falle usar esto al inicio de a linea)
         private void OnCollisionEnter2D(Collision2D collision) {
+
             if (collision.gameObject.tag == "Ground")
             {
                 isGround = true;
