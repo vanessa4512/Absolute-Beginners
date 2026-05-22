@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     private bool  isGround;
     public  Text   currentCoinText;
 
-    public int currentCoin;
+    private int currentCoin;
 
     private Rigidbody2D rb;
     private Animator animator;
@@ -86,8 +86,10 @@ public class Player : MonoBehaviour
             if (collision.gameObject.tag == "coin")
             {
                 currentCoin++;
+                currentCoinText.text = currentCoin.ToString();
                 Destroy(collision.gameObject);
             }
+
         }
 
 }
