@@ -1,6 +1,7 @@
 using UnityEngine;
-using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class Player : MonoBehaviour
 {
@@ -47,7 +48,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGround)
         {
             Jump();
-            isGround = true;
+            isGround = false;
         }
 
         if (Mathf.Abs(movement) > .1f)
@@ -90,6 +91,10 @@ public class Player : MonoBehaviour
                 Destroy(collision.gameObject);
             }
 
+            if (collision.gameObject.tag == "Key")
+            {
+                SceneManager.LoadScene("Level2");
+            }
         }
 
 }
