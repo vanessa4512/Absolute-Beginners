@@ -3,6 +3,14 @@ using UnityEngine;
 
 public class GameManage : MonoBehaviour
 {
+    public void NextButton() {
+        Debug.Log("Load Next Level");
+    }
+
+    public void MenuButton() {
+        Debug.Log("Load Menu");
+    }
+    
     public void ReloadLevel() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
