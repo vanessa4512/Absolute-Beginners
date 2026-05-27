@@ -79,7 +79,7 @@ public class Player : MonoBehaviour
 
             if (collision.gameObject.tag == "Enemy")
             {
-                FindAnyObjectByType<GameManage>().ReloadLevel();
+                SceneManager.LoadScene("RetryLevel");
             }
         }
 

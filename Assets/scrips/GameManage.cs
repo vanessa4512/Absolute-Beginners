@@ -7,6 +7,10 @@ public class GameManage : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
+    public void RetryGame() {
+        SceneManager.LoadScene("SampleScene");
+    }
+
     public void ExitGame() {
         Debug.Log("Exit Game");
         Application.Quit();
@@ -18,6 +22,7 @@ public class GameManage : MonoBehaviour
 
     public void MenuButton() {
         Debug.Log("Load Menu");
+        SceneManager.LoadScene(0);
     }
 
     public void ReloadLevel() {

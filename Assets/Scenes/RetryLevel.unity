@@ -233,6 +233,62 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameOverUI
       objectReference: {fileID: 0}
+    - target: {fileID: 3933812796157330109, guid: 1fdbf34e5226420458941f944e5f4ac7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933812796157330109, guid: 1fdbf34e5226420458941f944e5f4ac7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933812796157330109, guid: 1fdbf34e5226420458941f944e5f4ac7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 9160813369422725303, guid: a539e4327e7224c498c8f34c1249c1d0, type: 3}
+    - target: {fileID: 3933812796157330109, guid: 1fdbf34e5226420458941f944e5f4ac7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933812796157330109, guid: 1fdbf34e5226420458941f944e5f4ac7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MenuButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933812796157330109, guid: 1fdbf34e5226420458941f944e5f4ac7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManage, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933812796157330109, guid: 1fdbf34e5226420458941f944e5f4ac7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514384521882718641, guid: 1fdbf34e5226420458941f944e5f4ac7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514384521882718641, guid: 1fdbf34e5226420458941f944e5f4ac7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514384521882718641, guid: 1fdbf34e5226420458941f944e5f4ac7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 9160813369422725303, guid: a539e4327e7224c498c8f34c1249c1d0, type: 3}
+    - target: {fileID: 4514384521882718641, guid: 1fdbf34e5226420458941f944e5f4ac7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514384521882718641, guid: 1fdbf34e5226420458941f944e5f4ac7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RetryGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514384521882718641, guid: 1fdbf34e5226420458941f944e5f4ac7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManage, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514384521882718641, guid: 1fdbf34e5226420458941f944e5f4ac7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7696889242584927085, guid: 1fdbf34e5226420458941f944e5f4ac7, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -295,7 +351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7696889242584927085, guid: 1fdbf34e5226420458941f944e5f4ac7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -12.168396
+      value: -12.168457
       objectReference: {fileID: 0}
     - target: {fileID: 7696889242584927085, guid: 1fdbf34e5226420458941f944e5f4ac7, type: 3}
       propertyPath: m_AnchoredPosition.y
